@@ -34,7 +34,7 @@ def insertion_sort(list_a):
                 list_a[j+1] = list_a[j]
                 list_a[j] = value
             j -= 1
-        print list_a
+        print(list_a)
     return list_a
 
 
@@ -70,7 +70,7 @@ class BTree(object):
 
     def pre_order(self, tree_node=None):
         if tree_node:
-            print tree_node.data
+            print(tree_node.data)
             self.pre_order(tree_node.left)
             self.pre_order(tree_node.right)
 
@@ -103,4 +103,4 @@ if __name__ == '__main__':
     # print quick_sort([10, 45, 1, 11, 9, 24], 0, 5)
     # print insertion_sort([1, 3, 5, 7, 2, 4])
     gen = fib(25)
-    print [i for i in gen]
+    print([i for i in gen])
